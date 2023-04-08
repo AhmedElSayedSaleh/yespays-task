@@ -3,6 +3,8 @@ import Navbar from "./components/navbar/Navbar";
 import Product from "./pages/Product";
 import Breadcrumb from "./components/breadcrumb/Breadcrumb";
 const Cart = React.lazy(() => import("./components/cart/Cart"));
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import ProductImg1 from "/src/assets/images/product/1.jpg";
 import ProductImg2 from "/src/assets/images/product/2.jpg";
@@ -37,6 +39,17 @@ function App() {
     setCartQuantity(cartQuantity + quantityCount);
     setTotalPrice(totalPrice + product.price * quantityCount);
     setCartProduct(product);
+
+    toast.success("Product added to cart", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   };
 
   return (
@@ -56,6 +69,19 @@ function App() {
         decrease={handleDecrease}
         increase={handleIncrease}
         addToCart={handleAddToCart}
+      />
+
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
       />
     </div>
   );
