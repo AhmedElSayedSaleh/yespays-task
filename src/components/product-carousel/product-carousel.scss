@@ -1,0 +1,51 @@
+.product-carousel {
+  position: relative;
+
+  &__360 {
+    background-color: $fifth-color;
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    z-index: 1;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 3px #00000040;
+    padding: 1.4rem;
+  }
+
+  .image-gallery-thumbnail {
+    width: 12rem;
+    border-radius: 0.7rem;
+    border: none;
+
+    &:hover {
+      border: none;
+      transform: scale(1.1);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &.active {
+      border: none;
+    }
+
+    &-inner {
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &-image {
+      border-radius: 1rem;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .image-gallery-thumbnail + .image-gallery-thumbnail {
+    margin-#{$start}: 1rem;
+  }
+}

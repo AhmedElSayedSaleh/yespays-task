@@ -1,0 +1,42 @@
+.top-navbar {
+  background-color: $primary-color;
+  box-shadow: 0px 0.73px 2px #00000080;
+
+  &__logo {
+    margin: 0.9rem 3.2rem;
+  }
+
+  &__offers {
+    color: $fourth-color;
+    font-size: 1.2rem;
+
+    p {
+      margin-bottom: 0;
+      padding: 0 1.5rem;
+
+      a {
+        text-decoration: underline;
+        color: $fourth-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__list {
+    padding-#{$start}: 0;
+
+    li {
+      padding-#{$start}: 4rem;
+
+      a {
+        color: $fourth-color;
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-#{$start}: 1rem;
+        }
+      }
+    }
+  }
+}

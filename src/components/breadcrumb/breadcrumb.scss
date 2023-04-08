@@ -1,0 +1,22 @@
+.breadcrumb {
+  padding: 2.5rem 0;
+
+  &-item {
+    &::before {
+      color: $third-color !important;
+    }
+
+    &.active {
+      color: $third-color;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    a {
+      color: $third-color;
+      text-decoration: underline;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}

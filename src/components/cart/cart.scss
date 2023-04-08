@@ -1,0 +1,126 @@
+.cart-offcanvas {
+  padding: 3rem;
+  &__header {
+    &__btn {
+      padding: 0;
+    }
+
+    &__title {
+      color: $secondary-color;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    padding-top: 3rem;
+    &__summary {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $fourth-color;
+    }
+
+    &__list {
+      padding-top: 1.5rem;
+      &__card {
+        padding: 0.8rem;
+        border: 0.75px solid #ececec;
+        border-radius: 7px;
+
+        &__img {
+          min-width: 10.4rem;
+          width: 10.4rem;
+          height: 10.4rem;
+          border-radius: 7px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: fill;
+          }
+        }
+
+        &__content {
+          padding: 0.5rem 0.8rem;
+
+          &__title {
+            color: $third-color;
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+
+          &__quantity {
+            color: #3c3c3b;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+
+          &__price {
+            color: $secondary-color;
+            p {
+              font-size: 1.4rem;
+              margin-bottom: 0;
+
+              span {
+                font-size: 2rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__total-price {
+      p {
+        color: $third-color;
+        font-size: 2.2rem;
+        font-weight: 600;
+        padding-top: 1.6rem;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+
+    &__buttons {
+      padding-top: 1.2rem;
+
+      &__btn {
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 2.4rem;
+        border: none;
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        &--primary {
+          background-color: $primary-color;
+          color: $fourth-color;
+
+          &:hover {
+            outline: 0.2rem solid $secondary-color;
+          }
+        }
+
+        &--secondary {
+          background-color: $secondary-color;
+          color: $fifth-color;
+
+          &:hover {
+            outline: 0.2rem solid $primary-color;
+          }
+        }
+
+        &--remove {
+          font-size: 1rem;
+          color: $third-color;
+          border-radius: 1.2rem;
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+  }
+}

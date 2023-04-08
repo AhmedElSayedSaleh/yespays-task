@@ -1,0 +1,25 @@
+//direction setting variables
+$start: left;
+$end: right;
+
+// Colors
+$primary-color: #fff100;
+$secondary-color: #542e90;
+$third-color: #1d1d1b;
+$fourth-color: #000000;
+$fifth-color: #ffffff;
+$sixth-color: #a7a9ac;
+
+//Fonts
+$main-font: "Montserrat", sans-serif;
+
+// Components files
+@import "components/icon/icon.scss";
+@import "components/navbar/navbar.scss";
+@import "components/breadcrumb/breadcrumb.scss";
+@import "components/product-carousel/product-carousel.scss";
+@import "components/product-details/product-details.scss";
+@import "components/cart/cart.scss";
+
+// Pages files
+@import "pages/product.scss";

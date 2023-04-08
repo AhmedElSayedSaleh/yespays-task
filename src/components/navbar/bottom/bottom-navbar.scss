@@ -1,0 +1,17 @@
+.bottom-navbar {
+  background-color: $fourth-color;
+
+  &__list {
+    padding: 1.2rem 0;
+
+    &__link {
+      color: $fifth-color;
+      font-size: 1.7rem;
+      font-weight: 600;
+
+      &:hover {
+        color: #f11133;
+      }
+    }
+  }
+}
